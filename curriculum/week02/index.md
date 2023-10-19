@@ -71,7 +71,7 @@ _(Updated: 18/09/2023)_
   **TASK: Set up SSH keys for GitHub**. Once you have successfully completed all 4 steps, make sure to update your [progress sheet](../../user/progress.draft.60.csv) and mark the ` Set up SSH keys for GitHub` task as completed by switching the COMPLETED column from `FALSE` to `TRUE`.
 
   - [Watch: **Git Tutorial For Dummies**](https://www.youtube.com/watch?v=mJ-qvsxPHpY){:target="_blank"}
-    - **Notes**: Make sure to **follow along** and run the git commands on your own repo. ⚠️ **IMPORTANT:** The repository you will create under your GitHub account, **must be named: `gitVideo`**.
+    - **Notes**: Make sure to **follow along** and run the git commands on your own repo. ⚠️ **IMPORTANT:** The repository you will create under your GitHub account, **must be named: `gitVideo`**. Also, even though the author is using the old **master** convention for his repo branch names, you should use **main** instead: `git checkout main`, `git push -u origin main`, etc.
     - **Duration**: 20min 
     - **Level**: Beginner
     - <details>
@@ -171,7 +171,7 @@ _(Updated: 18/09/2023)_
 
   **What you'll learn:**
 
-  During Week 1, we covered some of the [basics of HTML](../week01/resources/html_basics/index.md). 
+  During Week 1, we covered some of the [basics of HTML](../week01/resources/HTML_Basics/index.md). 
   Now, it's time to dive deeper into HTML. 
 
   HTML elements can be distinguished by default into 2 broad categories, **block** and **inline** elements. This fundamental display property of HTML elements, affects their placement on the page and how they stack against each other. 
