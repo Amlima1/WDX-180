@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Animals table</title>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Animals table</h1>
+
+    <!--Let's use colspan and rowspan to improve this table.
+
+First, make a local copy of our animals-table.html and minimal-table.css files in a new directory on your local machine. The HTML contains the same animals example as you saw above.
+Next, use colspan to make "Animals", "Hippopotamus", and "Crocodile" span across two columns.
+Finally, use rowspan to make "Horse" and "Chicken" span across two rows.
+Save and open your code in a browser to see the improvement. this is the end result of animals-table.html-->
+
+    <table>
+      <tr>
+        <th colspan="2">Animals</th>
+      </tr>
+      <tr>
+        <th colspan="2">Hippopotamus</th>
+      </tr>
+      <tr>
+        <th rowspan="2">Horse</th>
+        <td>Mare</td>
+      </tr>
+      <tr>
+        <td>Stallion</td>
+      </tr>
+      <tr>
+        <th colspan="2">Crocodile</th>
+      </tr>
+      <tr>
+        <th rowspan="2">Chicken</th>
+        <td>Hen</td>
+      </tr>
+      <tr>
+        <td>Rooster</td>
+      </tr>
+    </table>
+
+
+  </body>
+</html>

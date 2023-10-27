@@ -1,0 +1,42 @@
+<!--we can specify the information once, 
+on a <col> element. <col> elements are specified 
+inside a <colgroup> container just below the 
+opening <table> tag. We could create 
+the same effect as we see above by specifying 
+our table as follows:-->
+<table>
+    <colgroup>
+      <col />
+      <col style="background-color: yellow" />
+    </colgroup>
+    <tr>
+      <th>Data 1</th>
+      <th>Data 2</th>
+    </tr>
+    <tr>
+      <td>Calcutta</td>
+      <td>Orange</td>
+    </tr>
+    <tr>
+      <td>Robots</td>
+      <td>Jazz</td>
+    </tr>
+  </table>
+
+  <!--Effectively we are defining two "style columns", 
+one specifying styling information for each column. 
+We are not styling the first column, but we still have 
+to include a blank <col> element — if we didn't, the styling 
+would just be applied to the first column.
+
+If we wanted to apply the styling information 
+to both columns, we could just include one <col> element with 
+a span attribute on it, like this:
+
+<colgroup>
+  <col style="background-color: yellow" span="2" />
+</colgroup>
+
+Just like colspan and rowspan, span takes a unitless number 
+value that specifies the number of columns you want 
+the styling to apply to.-->
