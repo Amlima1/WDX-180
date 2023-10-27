@@ -29,6 +29,11 @@ _(Updated: 15/10/2023)_
   - How to push your version to GitHub
 
   These are some of the basic concepts covered so far. If you feel like you are uncertain about some of the things above, don't worry! It takes time and lots of practice to learn and master git! You can always revisit old lectures and your personal notes! 
+
+  Let's start by looking more into the remote repositories and get comfortable with some very important git concepts, terms and commands:
+
+  - [Watch: **Git Remotes Fundamentals**](https://www.youtube.com/watch?v=5ctkqMqG6G4)
+    - Duration: 11min
   
   Let's strengthen our confidence by watching a video that gives a solid explanation of branches and a basic local workflow of creating/deleting branches in about ten minutes.  
   
@@ -172,6 +177,8 @@ _(Updated: 15/10/2023)_
 
 ### Exercises
 
+  - Let's quickly practice some CSS Selectors [here](css-selector-game/index.html){:target="_blank"}.
+
   - [Play: **CSS Diner**](https://flukeout.github.io/){:target="_blank"}
     - An awesome exercise as a game, consisting of 32 levels to help you understand how CSS selectors work, in a very fun way!
     - Take a screenshot of the max level you have successfully completed, name it `completed-level.png` and move it to folder `user/week03/exercises/day03/`
@@ -187,6 +194,8 @@ _(Updated: 15/10/2023)_
 ### Sources and Attributions
 
   **Content is based on the following sources:**
+
+  - [The CSS-Selector-Game](https://github.com/toolness/css-selector-game) _(Please give the original author a star!)_
 
   - **MDN:**
     - [CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors){:target="_blank"}
