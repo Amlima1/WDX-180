@@ -25,9 +25,13 @@ const wdxTemplateRegexes = {
 
   // TODO: weekRegex will be replaced by weekFullRegex and weekNumRegex
   weekRegex:          /\{\{\s?WDX:\s?WEEK\s?\}\}/gi,
+  weekNumRegex:       /\{\{\s?WDX:\s?WEEK_NUM\s?\}\}/gi,
   weekFullRegex:      /\{\{\s?WDX:\s?WEEK_FULL\s?\}\}/gi,
   titleRegex:         /\{\{\s?WDX:\s?TITLE\s?\}\}/gi,
+  // TODO: dayRegex will be replaced by dayFullRegex and dayNumRegex
   dayRegex:           /\{\{\s?WDX:\s?DAY\s?\}\}/gi,
+  dayFullRegex:       /\{\{\s?WDX:\s?DAY_FULL\s?\}\}/gi,
+  dayNumRegex:        /\{\{\s?WDX:\s?DAY_NUM\s?\}\}/gi,
   scheduleRegex:      /\{\{\s?WDX:\s?DAILY_SCHEDULE\s?\}\}/gi,
   studyPlanRegex:     /\{\{\s?WDX:\s?STUDY_PLAN\s?\}\}/gi,
   summaryRegex:       /\{\{\s?WDX:\s?SUMMARY\s?\}\}/gi,
@@ -35,6 +39,7 @@ const wdxTemplateRegexes = {
   extrasRegex:        /\{\{\s?WDX:\s?EXTRAS\s?\}\}/gi,
   attributionsRegex:  /\{\{\s?WDX:\s?ATTRIBUTIONS\s?\}\}/gi,
   includesRegex:      /\{\{\s?WDX:\s?INCLUDES:(.*)\s?\}\}/gi,
+  moduleRegex:        /\{\{\s?WDX:\s?MODULE:(.*)\s?\}\}/gi,
   dateUpdatedRegex:   /\{\{\s?WDX:\s?DATE_UPDATED\s?\}\}/gi,
   weeklyContentRegex: /\{\{\s?WDX:\s?WEEKLY_CONTENT\s?\}\}/gi,
   wdx: {
@@ -198,7 +203,12 @@ function getInclude({ file, day, numOfWeek }){
 
 }
 
-function replaceInclude({ day, numOfWeek }){
+// TODO: WiP
+function getModule({}){
+
+}
+
+function replaceInclude({ day, numOfWeek } = {}){
 
   return function( match, group1, string){
 
@@ -270,7 +280,7 @@ function copyModuleMediaAssets({ weeklyData, title }){
 
         try {
 
-          const userFolderExists = fs.existsSync(targetAssetsPath)
+          const userFolderExists = fs.existsSync(targetAssetsPath);
       
           if ( userFolderExists ) {
         
@@ -537,7 +547,12 @@ function replaceSectionFromObject({ section, contentObject, day, numOfWeek }){
 
   return function( match ){
 
-    const { weekRegex, dayRegex } = wdxTemplateRegexes;
+    const { 
+      weekRegex,
+      weekNumRegex,
+      dayRegex,
+      dayNumRegex 
+    } = wdxTemplateRegexes;
 
     if ( !contentObject[section] ){
 
@@ -574,9 +589,30 @@ function replaceSectionFromObject({ section, contentObject, day, numOfWeek }){
 
     }
 
-    dailyScheduleSection = dailyScheduleSection.replace(weekRegex, `Week ${numOfWeek}`).replace(dayRegex, `Day ${day}`);
+    dailyScheduleSection = dailyScheduleSection
+    .replace(weekRegex, `Week ${numOfWeek}`)
+    .replace(weekNumRegex, `${numOfWeek}`)
+    .replace(dayNumRegex, `${String(day).padStart(2,"0")}`)
+    .replace(dayRegex, `Day ${day}`);
 
     return dailyScheduleSection;
+  }
+
+}
+
+// Deep Markdown Token parsing for Assets (./assets/*)
+function parseTokenForAssetAndPushToArray( token, hrefs ){
+  
+  if ( token.type === "link" ){
+    if ( token.href.indexOf("./assets") === 0 ){
+      hrefs.push(token.href);
+    }
+  }
+  if ( token.tokens ){
+    token.tokens.forEach( t => parseTokenForAssetAndPushToArray( t, hrefs ));
+  }
+  if ( token.items ){
+    token.items.forEach( t => parseTokenForAssetAndPushToArray( t, hrefs ));
   }
 
 }
@@ -586,11 +622,8 @@ function parseTokenForMediaAssets( token ){
 
   const hrefs = [];
 
-  if ( token.type === "list" && token.items ){
-    token.items.forEach( item =>{
-      // console.log( item );
-    })
-  }
+  // TODO: Probably this function can replace the following 2 if statements altogether as it parses all the MD Tree for links with ./assets
+  parseTokenForAssetAndPushToArray( token, hrefs );
 
   if ( token.type === "paragraph" ){
 
@@ -626,7 +659,12 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
   }
 
   const dailyModuleDir = path.join( modulesFolder, dayMeta.module ); 
-  const dailyModule    = path.join( dailyModuleDir, "index.md" ); 
+  const pathStats = fs.statSync(dailyModuleDir);
+  let dailyModule = dailyModuleDir;
+  // We can either pass a directory (that contains an index.md file) or a full path that includes a filename, e.g. extra_day.md
+  if ( pathStats.isDirectory() ){
+    dailyModule = path.join( dailyModuleDir, "index.md" ); 
+  }
   let moduleMarkdown = null;
   try {
     moduleMarkdown = fs.readFileSync(dailyModule, "utf-8");
@@ -825,6 +863,35 @@ function parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek }){
 
 }
 
+function createExerciseFolders({ weeklyData, title, numOfWeek }){
+
+  weeklyData.forEach((dailyData, idx) =>{
+
+    const paddedDay = String(idx+1).padStart(2,"0");
+    const weeklyUserFolder = path.join(
+      "user",
+      `week${numOfWeek}`,
+      "exercises",
+      `day${paddedDay}`
+    );
+
+    const doesWeeklyUserFolderExist = fs.existsSync(weeklyUserFolder);
+
+    if ( doesWeeklyUserFolderExist ) {
+      warn(`Folder '${weeklyUserFolder}' already exists.`);
+    } else {
+      fs.mkdirSync(weeklyUserFolder, { recursive: true });
+      console.log(`Folder '${weeklyUserFolder}' created.`);
+    }
+    fs.writeFileSync(
+      path.join(weeklyUserFolder, ".gitkeep"), 
+      "", "utf-8"
+    );
+
+
+  })
+}
+
 function createWeeklyContentFromYaml({ configYaml, filename }) {
 
   const { input, daily_input, schedule, title } = yaml.parse(configYaml);
@@ -897,6 +964,11 @@ function createWeeklyContentFromYaml({ configYaml, filename }) {
     // Copy Media Assets from Module folder to curriculum/
     copyModuleMediaAssets({ weeklyData, title });
 
+    // Generate /user/weekXX/exercises/... folders
+    createExerciseFolders({
+      weeklyData, title, numOfWeek
+    }); 
+
     // Generate progress sheets:
     const csv = generateWeeklyProgressSheetFromWeeklyData({ 
       weeklyData, title 
@@ -915,42 +987,164 @@ function createWeeklyContentFromYaml({ configYaml, filename }) {
 
 }
 
+// TODO: WiP
+function createContentFromYaml({ configYaml, filename }) {
+
+  const { input, output, daily_input, schedule, title } = yaml.parse(configYaml);
+  const textContent        = fs.readFileSync(input, "utf-8");
+
+  // Parse markdown and separate Frontmatter and main content:
+  const { content, data: fm, orig } = matter(textContent);
+
+  try {
+
+    const {
+
+      // weekRegex,
+      titleRegex,
+      moduleRegex,
+      // dateUpdatedRegex,
+      // weeklyContentRegex,
+      // includesRegex
+  
+    } = wdxTemplateRegexes;
+  
+    // const date = new Date();
+    // const DDMMYYYY = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}` 
+  
+    let newRaw = textContent
+    .replace(titleRegex, title)
+    
+    // .replace(dateUpdatedRegex, DDMMYYYY)
+    // .replace(includesRegex, replaceInclude());
+    .replace(moduleRegex, function( match, modulePath, offset, string ){
+
+      const fullPath = path.join(modulesFolder, modulePath.trim());
+      const textContent = fs.readFileSync(fullPath, "utf-8");
+      return textContent;
+
+    });
+  
+    
+  // const dailyMarkdownTokens = marked.lexer(dailyDraftTemplate);
+  fs.writeFileSync(output, newRaw, "utf-8");
+
+  //   const daysEntries = Object.entries(schedule.days);
+  //   const weeklyData = daysEntries
+  //   .map( entry =>{
+  //     return parseDailyContent({ entry, dailyMarkdownTokens, numOfWeek });
+  //   });
+    
+  //   let weeklyContent = weeklyData
+  //   .filter(Boolean)
+  //   .map( data => data.content )
+  //   .join("");
+  //   // Parse markdown tokens:
+  //   const markdownTokens = marked.lexer(content);
+  //   let outputContent = "";
+  //   markdownTokens.forEach( token =>{
+
+  //     if ( token.raw ){
+
+  //       const parsedTokenRaw = parseWeeklyPatterns({ 
+  //         raw: token.raw, 
+  //         numOfWeek,
+  //         weeklyContent,
+  //         title
+  //       }); 
+
+  //       outputContent += parsedTokenRaw;
+
+  //     } else {
+
+  //       outputContent += token.raw;
+
+  //     }
+  //   });
+  
+  //   const fmString = getFrontMatterStringFromObject(fm);
+  
+  //   outputContent = parseWeeklyPatterns({ raw: fmString, numOfWeek, title }) + outputContent;
+  
+  //   const weeklyIndexMarkdown = path.join( weeklyFolder, "index.md" );
+  //   fs.writeFileSync(weeklyIndexMarkdown, outputContent, "utf-8");
+
+  //   // Copy Media Assets from Module folder to curriculum/
+  //   copyModuleMediaAssets({ weeklyData, title });
+
+  //   // Generate /user/weekXX/exercises/... folders
+  //   createExerciseFolders({
+  //     weeklyData, title, numOfWeek
+  //   }); 
+
+  //   // Generate progress sheets:
+  //   const csv = generateWeeklyProgressSheetFromWeeklyData({ 
+  //     weeklyData, title 
+  //   });
+
+  //   // Generate yaml tests:
+  //   const test = generateWeeklyTestsFromWeeklyData({
+  //     weeklyData, title
+  //   });
+
+  } catch(e) {
+
+    console.log(e);
+
+  }
+
+}
+
 function init() {
 
   /* eslint-disable-next-line no-undef */
-  const configYamlPath = process.argv[2];
-  
+  const pathOrNumber = process.argv[2]; // Either curriculum/schedule/week04.yaml or 4
+  const weekNum = parseInt(pathOrNumber, 10);
+  let configYamlPath = pathOrNumber;
+
+  // Handle alternative syntax: npm run sgen 5
+  if ( typeof weekNum === "number" && !Number.isNaN(weekNum) ){
+    configYamlPath = path.join(
+      "curriculum", 
+      "schedule", 
+      `week${String(weekNum).padStart(2,"0")}.yaml`
+    );
+  }
+
   if (!configYamlPath) {
     warn("No configYamlPath.")
     /* eslint-disable-next-line no-undef */
     process.exit();
   }
 
-  const configYaml = fs.readFileSync(path.join(configYamlPath), "utf-8");
+  const configYaml = fs.readFileSync(configYamlPath, "utf-8");
   const { input, output, Syllabus } = yaml.parse(configYaml);
 
   try {
 
-    const textContent = fs.readFileSync(input, "utf-8");
-
-    if (Syllabus) {  // e.g. curriculum/curriculum.yaml
-
+    // e.g. curriculum/curriculum.yaml
+    if ( Syllabus ) {  
+      
+      const textContent = fs.readFileSync(input, "utf-8");
       console.log(`Processing Syllabus: ${input}`);
       const outputContent = createSyllabusFromMarkdownText({ textContent, configYaml });
-      fs.writeFileSync(output, outputContent, "utf-8");
+      return fs.writeFileSync(output, outputContent, "utf-8");
       // TODO: (Optionally) read all weeks (e.g. week01.yaml, week02.yaml, etc.) and generate all the content along with the curriculum/index.md
 
-    } else {  // e.g. curriculum/schedule/week04.yaml
+    }  
+
+    const filename = path.basename(configYamlPath, path.extname(configYamlPath));
+
+    // e.g. curriculum/schedule/week04.yaml
+    if ( filename.indexOf("week") === 0 ){
 
       console.log(`Processing Weekly Content: ${configYamlPath}`);
-      const filename = path.basename(configYamlPath, path.extname(configYamlPath));
-      if ( filename.indexOf("week") !== 0 ){
-        return warn("Weekly YAML requires the following format: 'weeklyDD.yaml'")
-      } else {
-        createWeeklyContentFromYaml({ configYaml, filename });
-      }
+      return createWeeklyContentFromYaml({ configYaml, filename });
 
     }
+
+    // All the rest...
+    createContentFromYaml({ configYaml, filename });
 
   } catch (e) {
 

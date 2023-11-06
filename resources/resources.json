@@ -2399,6 +2399,246 @@
       "language": [
         "en"
       ]
+    },
+    "different-ways-to-open-chrome-devtools-devtools-tips": {
+      "type": "YouTube",
+      "duration": 283,
+      "title": "Different ways to open Chrome DevTools | DevTools Tips",
+      "date": "27/10/2022",
+      "youtube": {
+        "id": "X65TAP8a530",
+        "channel_id": "UCnUYZLuoy1rq1aVMwx4aTzw",
+        "channel_title": "Chrome for Developers",
+        "thumbnail_url": "https://i.ytimg.com/vi/X65TAP8a530/sddefault.jpg"
+      },
+      "tags": [
+        "Chrome",
+        "Developers",
+        "Google",
+        "Web",
+        "Chrome Devtools",
+        "chrome developer tools",
+        "intro to devtools tips",
+        "what are devtools tips",
+        "how to use devtools tips",
+        "devtools tips tutorial",
+        "devtools",
+        "chrome",
+        "developer",
+        "developers",
+        "google developer",
+        "google developers",
+        "google chrome developers",
+        "chrome developer",
+        "chrome developers",
+        "google chrome",
+        "Jecelyn Yeen",
+        "different ways to open devtools",
+        "how to open devtools",
+        "the different ways to open devtools"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "html-vs-dom-lets-debug-them": {
+      "type": "YouTube",
+      "duration": 312,
+      "title": "HTML vs DOM? Let’s debug them",
+      "date": "26/10/2023",
+      "youtube": {
+        "id": "J-02VNxE7lE",
+        "channel_id": "UCnUYZLuoy1rq1aVMwx4aTzw",
+        "channel_title": "Chrome for Developers",
+        "thumbnail_url": "https://i.ytimg.com/vi/J-02VNxE7lE/sddefault.jpg"
+      },
+      "tags": [
+        "Chrome",
+        "Developers",
+        "Google",
+        "Web",
+        "Chrome Devtools",
+        "chrome developer tools",
+        "intro to devtools tips",
+        "what are devtools tips",
+        "how to use devtools tips",
+        "devtools tips tutorial",
+        "devtools",
+        "chrome",
+        "developer",
+        "developers",
+        "google developer",
+        "google developers",
+        "google chrome developers",
+        "chrome developer",
+        "chrome developers",
+        "google chrome",
+        "Jecelyn Yeen"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "vscode-tailwindcss": {
+      "type": "VSCode Extension",
+      "identifier": "https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss",
+      "tags": [
+        "Tailwind",
+        "VSCode"
+      ]
+    },
+    "tailwind-in-100-seconds": {
+      "type": "YouTube",
+      "duration": 141,
+      "title": "Tailwind in 100 Seconds",
+      "date": "26/08/2021",
+      "youtube": {
+        "id": "mr15Xzb1Ook",
+        "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+        "channel_title": "Fireship",
+        "thumbnail_url": "https://i.ytimg.com/vi/mr15Xzb1Ook/sddefault.jpg"
+      },
+      "tags": [
+        "app development",
+        "lesson",
+        "tailwind",
+        "tailwindcss",
+        "webdev",
+        "web design",
+        "css"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "how-to-make-a-website-with-tailwind-css-step-by-step-tutorial-for-beginners": {
+      "type": "YouTube",
+      "duration": 1880,
+      "title": "How To Make A Website With Tailwind CSS Step By Step Tutorial For Beginners",
+      "date": "10/02/2023",
+      "youtube": {
+        "id": "8eQwgc9nc64",
+        "channel_id": "UCkjoHfkLEy7ZT4bA2myJ8xA",
+        "channel_title": "GreatStack",
+        "thumbnail_url": "https://i.ytimg.com/vi/8eQwgc9nc64/sddefault.jpg"
+      },
+      "tags": [
+        "web design",
+        "web development",
+        "website design for beginners",
+        "HTML and CSS",
+        "HTML website",
+        "How to make a website using HTML",
+        "tailwind css",
+        "tailwind css tutorial",
+        "tailwind css tutorial for beginners",
+        "tailwind css website",
+        "tailwind css web design",
+        "web design tailwind",
+        "responsive web design tailwind css",
+        "tailwind css project",
+        "web design project"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "tailwind-css---why-css-utility-classes-save-so-much-time": {
+      "type": "YouTube",
+      "duration": 1015,
+      "title": "Tailwind CSS - why CSS utility classes save so much time",
+      "date": "09/07/2021",
+      "youtube": {
+        "id": "oU5ar0dmQEY",
+        "channel_id": "UCVTlvUkGslCV_h-nSAId8Sw",
+        "channel_title": "LearnCode.academy",
+        "thumbnail_url": "https://i.ytimg.com/vi/oU5ar0dmQEY/sddefault.jpg"
+      },
+      "tags": [
+        "tailwind css",
+        "tailwind css tutorial",
+        "tailwindcss tutorial",
+        "tailwind css react",
+        "tailwind css crash course",
+        "tailwindcss purgecss",
+        "tailwind css purge css",
+        "purge css classes",
+        "how to use tailwind css in html",
+        "css tutorial",
+        "tailwinds css",
+        "tailwind tutorial",
+        "tailwind tutorial 2021",
+        "tailwind css purgecss",
+        "tailwind 2021",
+        "tailwind tutorial for beginners",
+        "Tailwind css vue"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "learn-sass-in-20-minutes-sass-crash-course": {
+      "type": "YouTube",
+      "duration": 1182,
+      "title": "Learn Sass In 20 Minutes | Sass Crash Course",
+      "date": "13/03/2019",
+      "youtube": {
+        "id": "Zz6eOVaaelI",
+        "channel_id": "UClb90NQQcskPUGDIXsQEz5Q",
+        "channel_title": "developedbyed",
+        "thumbnail_url": "https://i.ytimg.com/vi/Zz6eOVaaelI/sddefault.jpg"
+      },
+      "tags": [
+        "learn sass",
+        "learn sass css",
+        "learn scss",
+        "sass tutorial",
+        "scss tutorial",
+        "sass tutorial 2018",
+        "how to install sass",
+        "visual studio code sass",
+        "visual studio code scss",
+        "visual studio code",
+        "free sass tutorials",
+        "scss tutorial for beginners",
+        "how to install sass css",
+        "free sass course",
+        "Learn Sass In 20 Minutes",
+        "sass in 20 minutes",
+        "sass course",
+        "sass compiler"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "why-i-use-the-bem-naming-convention-for-my-css": {
+      "type": "YouTube",
+      "duration": 423,
+      "title": "Why I use the BEM naming convention for my CSS",
+      "date": "09/11/2018",
+      "youtube": {
+        "id": "SLjHSVwXYq4",
+        "channel_id": "UCJZv4d5rbIKd4QHMPkcABCw",
+        "channel_title": "Kevin Powell",
+        "thumbnail_url": "https://i.ytimg.com/vi/SLjHSVwXYq4/sddefault.jpg"
+      },
+      "tags": [
+        "Kevin Powell",
+        "tutorial",
+        "html",
+        "css",
+        "css bem",
+        "bem naming convention",
+        "css bem naming",
+        "css bem methodology",
+        "css bem best practice",
+        "css bem examples",
+        "why i use bem",
+        "css naming conventions",
+        "css naming conventions best practices",
+        "css naming classes"
+      ]
     }
   },
   "creators": {}
