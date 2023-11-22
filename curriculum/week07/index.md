@@ -24,7 +24,7 @@ title: Week 07 | JavaScript Core 1
 
   </h2>
 
-  <span>Updated: 17/11/2023</span>
+  <span>Updated: 21/11/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -93,6 +93,19 @@ title: Week 07 | JavaScript Core 1
 
   - `cd WDX-180/curriculum/modules/javascript/denepo/_just-enough-javascript/`
   - `lenses2`
+
+  Here's a basic methodology for going through the material:
+
+  - 1) Read the related material and explore any external resources
+  - 2) Study the inline code using the recommended lenses
+  - 3) Go through the exercises and try to explore and comprehend the code using the suggested (enabled) lenses
+  - 4) Feel free to experiment with more lenses!
+
+  ![Study Lenses Guide](./assets/study.lenses.guide.jpg)
+
+  Once you are inside an exercise of example code, once again use the recommended lenses displayed above the code to explore and understand the code:
+
+  ![Exercise Lenses](./assets/recommended.lenses.jpg)
 
   Now it's time to go through the material. For this Module you will only need to go through the following sections:
 
@@ -267,7 +280,3 @@ title: Week 07 | JavaScript Core 1
 <hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
-
-## Week 07 - Weekend Suggestions
-
-If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
