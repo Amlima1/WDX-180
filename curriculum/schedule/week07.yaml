@@ -4,24 +4,33 @@ title: JavaScript Core 1
 schedule: 
 
   days:
-    1: # Introduction to JavaScript
-      # Topics: var, let, const, Numbers, Booleans, Strings, Control Flow (if), Loops (while, for) 
-      # file://./../modules/javascript/core/intro/index.md
-      module: javascript/core/intro
-    2: # Introduction to Functions
-      # Topics: Functions (normal, arrow, higher-order), Scope, Built-ins
-      # file://./../modules/javascript/core/functions/intro_to_functions/index.md
-      module: javascript/core/functions/intro_to_functions
-    3: # Introduction to Objects
-      # file://./../modules/javascript/core/objects/intro_to_objects/index.md
-      module: javascript/core/objects/intro_to_objects
-    4: # Introduction to Arrays
-      # file://./../modules/javascript/core/arrays/intro_to_arrays/index.md
-      module: javascript/core/arrays/intro_to_arrays
+    1: # 
+      # file://./../modules/javascript/denepo/just-enough-javascript/part-01/index.md
+      module: javascript/denepo/just-enough-javascript/part-01/
+    2: # 
+      # file://./../modules/javascript/denepo/just-enough-javascript/part-02/index.md
+      module: javascript/denepo/just-enough-javascript/part-02/
+    3: # 
+      # file://./../modules/javascript/denepo/just-enough-javascript/part-03/index.md
+      module: javascript/denepo/just-enough-javascript/part-03/
+    4: # 
+      # file://./../modules/javascript/denepo/just-enough-javascript/part-04/index.md
+      module: javascript/denepo/just-enough-javascript/part-04/
     5: # 
-      module: javascript/core
+      # file://./../modules/javascript/denepo/just-enough-javascript/part-05/index.md
+      module: javascript/denepo/just-enough-javascript/part-05/
 
 # ---
+
+# Day 01: Q: "anybody installed lenses2? im stuck at installing."
+# A: "its done ok after npm install and not npm i. I also deleted the folders and did it from the start."
+# >> Q: "are we going to use checkout main to return to main or stay on branch lenses2?"
+
+# http://localhost:4600/curriculum/modules/javascript/denepo/_just-enough-javascript/02-primitive-values/syntax/exercises/four-lines-of-code.js?--defaults
+# Share the pictures you've taken with your classmates and have a discussion while comparing your screenshots!
+
+# TODO: UPDATE study-lenses: Download Canvas Picture!
+
 
 # TODO: Day 1?
 # Mosh video to extra resources => https://www.youtube.com/watch?v=W6NZfCO5SIk
@@ -33,15 +42,6 @@ schedule:
 # https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/41
 # https://eventloop.gr/Education/TechTalentSchool/javascript/introduction.html#/42/3
 # EXERCISE: https://codepen.io/kostasx/pen/vQMwKp?editors=0011
-
-# TODO: Check whether the following DeNepo material can be integrated (dispersed) throughout this week's content:
-# 1) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming
-# 2) https://github.com/in-tech-gration/welcome-to-js/blob/main/1-what-is-programming/0-javascript/README.md
-# 3) https://github.com/in-tech-gration/welcome-to-js/blob/main/1-what-is-programming/0-javascript/some-history.md
-# 4) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/1-the-developers
-# 5) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/2-the-computer
-# 6) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/3-the-users
-# 7) https://github.com/in-tech-gration/welcome-to-js/tree/main/1-what-is-programming/4-data-in-data-out
 
 # TODO: Integrate?
 # while loop exercise (using document.write instead):
