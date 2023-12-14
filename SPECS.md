@@ -15,6 +15,7 @@
   ├── curriculum
   ├── README.md
   ├── _config.yml
+  ├── _offline.yml
   └── assets
       ├── WDX.Header.Alternative.jpg
       ├── WDX.Header.jpg
@@ -22,17 +23,19 @@
       └── jekyll
   ```
 
-> "By default, Jekyll doesn't build files or folders that:
-> 
-> are located in a folder called `/node_modules` or `/vendor`
->
-> start with _, ., or #
->
-> end with ~
->
-> are excluded by the exclude setting in your configuration file
->
-> If you want Jekyll to process any of these files, you can use the include setting in your configuration file. (_config.yml)
+  - **offline.yml** is used to build a local GitHub Pages site, excluding some folders that are not needed for offline usage by the students
+
+  > "By default, Jekyll doesn't build files or folders that:
+  > 
+  > are located in a folder called `/node_modules` or `/vendor`
+  >
+  > start with _, ., or #
+  >
+  > end with ~
+  >
+  > are excluded by the exclude setting in your configuration file
+  >
+  > If you want Jekyll to process any of these files, you can use the include setting in your configuration file. (_config.yml)
 
 ## Jekyll | How to | Change Website Styling (CSS)
 
@@ -108,6 +111,40 @@
 ## Jekyll | How to | Prevent build on GitHub Pages
 
   Just include a `.nojekyll` file in the repo.
+
+## Jekyll | How to | Build Locally
+
+  - Follow the instructions on installing Jekyll:
+    - https://jekyllrb.com/docs/installation/macos/
+    - https://jekyllrb.com/docs/installation/windows/
+    - https://jekyllrb.com/docs/installation/ubuntu/
+
+  - Create a `Gemfile`:
+
+  ```
+  source "https://rubygems.org"
+
+  gem 'github-pages', group: :jekyll_plugins
+  gem "webrick", "~> 1.8"
+
+  # gem 'github-pages'
+  # gem "jekyll-readme-index", "~> 0.3.0"
+  # gem "jekyll-theme-midnight", "= 0.2.0"
+  # gem "jekyll-sass-converter", "= 1.5.2"
+  ```
+
+  - Run:
+    - `bundle add webrick`
+    - `bundle install`
+    - `bundle exec jekyll _3.9.3_ serve`
+    - or `npm run build:jekyll`
+
+  REFERENCES:
+
+  - https://github.com/github/pages-gem
+  - https://github.com/github/pages-gem
+  - https://github.com/orgs/community/discussions/37669
+  - https://pages.github.com/versions/
 
 ---
 

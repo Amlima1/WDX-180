@@ -1,11 +1,11 @@
 ---
-title: Week 11 | Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media
+title: Week 11 | Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 11-Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media | slugify }}">
-  <span class="week-prefix">Week 11 |</span> Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media
+<h1 id="{{ Week 11-Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API | slugify }}">
+  <span class="week-prefix">Week 11 |</span> Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API
 </h1>
 
 <div class="week-controls">
@@ -24,7 +24,7 @@ title: Week 11 | Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media
 
   </h2>
 
-  <span>Updated: 29/11/2023</span>
+  <span>Updated: 12/12/2023</span>
 
   <h2 class="week-controls__next_week">
 
@@ -57,6 +57,45 @@ title: Week 11 | Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media
 
 ### Study Plan
 
+  - [Read: **Introduction to JSON**](../modules/javascript/core/json/intro/content/index.md){:target="_blank"}
+
+### Summary
+
+  🌕 You are extraordinary. You know a light-weight data format which you may use to store data or to send it an HTTP server. Now do some exercises for your brain and for your muscle.
+
+### Exercises
+
+  **JSON Basics**
+
+  Copy the folder `curriculum/week11/exercises/json_basics/` inside folder `user/week11/exercises/day01/` and compete all the challenges found inside the JavaScript file.
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week11/progress/progress.draft.w11.d01.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+
+### Extra Resources
+
+  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
+
+### Sources and Attributions
+
+  **Content is based on the following sources:**
+
+  - [30 Days Of JavaScript: JSON](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/master/16_Day_JSON/16_day_json.md){:target="_blank"} [(Permalink)](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/55d8e3dbc0410d64c1dc3ea5915e015a7950cf2a/16_Day_JSON/16_day_json.md){:target="_blank"}
+
+  Don't forget to star this awesome [repo](https://github.com/Asabeneh/30-Days-Of-JavaScript){:target="_blank"}!
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 11 - Day 2 | Introduction to Promises -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 11 - Day 2</span> | Introduction to Promises</h2>
+  </summary>
 
 ### Schedule
 
@@ -66,20 +105,21 @@ title: Week 11 | Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media
 
 ### Study Plan
 
-  30 Days Of JavaScript: JSON
+  - [Read: **Promises and Callbacks**](../modules/javascript/async/promises/intro/content/index.md){:target="_blank"}
 
-### Summary
+  Promises are a tough subject in JavaScript, and a lot of developers, even very experienced ones, have issues with them. So you do not have to worry is this concept feel unclear to you.
 
-### Exercises
+  Below you can find 2 great videos that explain both the Asynchronous topic and Promises
 
-### Extra Resources
+  - [Watch: **Async JavaScript & Callback Functions**](https://www.youtube.com/watch?v=QSqc6MMS6Fk){:target="_blank"}
+    - Level: Beginner
+    - Duration: 24mins
+    - Captions: Yes
 
-  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
-
-### Sources and Attributions
-
-
-
+  - [Watch: **JavaScript Promises**](https://www.youtube.com/watch?v=TnhCX0KkPqs){:target="_blank"}
+    - Level: Beginner
+    - Duration: 37mins
+    - Captions: Yes
 
 <!-- Summary -->
 
@@ -89,7 +129,118 @@ title: Week 11 | Web APIs 2: Promises, JSON, Fetch API, Web Storage, Media
 
   _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
 
-<!-- Sources and Attributions -->
+### Sources and Attributions
+
+  **Content is based on the following sources:**
+
+  - [30 Days Of JavaScript: Promises](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/master/18_Day_Promises/18_day_promises.md){:target="_blank"} [(Permalink)](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/55d8e3dbc0410d64c1dc3ea5915e015a7950cf2a/18_Day_Promises/18_day_promises.md){:target="_blank"}
+
+  Don't forget to star this awesome [repo](https://github.com/Asabeneh/30-Days-Of-JavaScript){:target="_blank"}!
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 11 - Day 3 | Introduction to Fetch API -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 11 - Day 3</span> | Introduction to Fetch API</h2>
+  </summary>
+
+### Schedule
+
+  - [Study](#study-plan-NN)
+  - [Exercises](#exercises-NN)
+  - [Extra Resources](#extra-resources-NN)
+
+### Study Plan
+
+  ![Fetch Better Have My Money](./assets/Fetch.Better.Have.My.Money.jpg)
+
+  - [Watch: **JavaScript Fetch API 👨🏻‍💻 in 1 Minute**](https://www.youtube.com/watch?v=3ySZQXVjCoM){:target="_blank"}
+    - Level: Beginner
+    - Duration: 1min
+    - Captions: Yes
+
+  - [Read: **Fetch API**](../modules/javascript/web_apis/fetch/intro/content/index.md){:target="_blank"}
+
+  - [Watch **Fetch API**](https://www.youtube.com/watch?v=ubw2hdQIl4E){:target="_blank"}
+    - Level: Beginner
+    - Duration: 30min
+    - Caption: Yes
+
+<!-- Summary -->
+
+### Exercises
+
+  **Fetch Basics**
+
+  Copy the folder `curriculum/week11/exercises/fetch_basics/` inside folder `user/week11/exercises/day03/` and compete all the challenges found inside the JavaScript file.
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week11/progress/progress.draft.w11.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
+
+### Extra Resources
+
+  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
+
+### Sources and Attributions
+
+  **Content is based on the following sources:**
+
+  - [30 Days Of JavaScript: Promises](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/master/18_Day_Promises/18_day_promises.md#fetch-api){:target="_blank"} [(Permalink)](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/55d8e3dbc0410d64c1dc3ea5915e015a7950cf2a/18_Day_Promises/18_day_promises.md#fetch-api){:target="_blank"}
+
+  Don't forget to star this awesome [repo](https://github.com/Asabeneh/30-Days-Of-JavaScript){:target="_blank"}!
+  
+</details>
+
+<hr class="mt-1">
+
+<!-- Week 11 - Day 4 | Introduction to Async/Await -->
+<details markdown="1">
+  <summary>
+    <h2>
+      <span class="summary-day">Week 11 - Day 4</span> | Introduction to Async/Await</h2>
+  </summary>
+
+### Schedule
+
+  - [Study](#study-plan-NN)
+  - [Exercises](#exercises-NN)
+  - [Extra Resources](#extra-resources-NN)
+
+### Study Plan
+
+  - [Watch: **JavaScript Async Await 👨🏻‍💻 Tutorial in 1 Minute**](https://www.youtube.com/watch?v=TtnodUZ7xnQ){:target="_blank"}
+    - Level: Beginner
+    - Duration: 1min
+    - Captions: Yes
+
+  - [Read: **Introduction to Async/Await**](../modules/javascript/async/async_await/intro/content/index.md){:target="_blank"}
+
+  - [Watch: **Async Await vs. Promises**](https://www.youtube.com/watch?v=spvYqO_Kp9Q){:target="_blank"}
+    - Level: Beginner
+    - Duration: 24mins
+    - Captions: Yes
+
+<!-- Summary -->
+
+<!-- Exercises -->
+
+### Extra Resources
+
+  _(Nothing here yet. Feel free to contribute if you've found some useful resources.)_
+
+### Sources and Attributions
+
+  **Content is based on the following sources:**
+
+  - [30 Days Of JavaScript: Promises](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/master/18_Day_Promises/18_day_promises.md#async-and-await){:target="_blank"} [(Permalink)](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/55d8e3dbc0410d64c1dc3ea5915e015a7950cf2a/18_Day_Promises/18_day_promises.md#async-and-await){:target="_blank"}
+
+  Don't forget to star this awesome [repo](https://github.com/Asabeneh/30-Days-Of-JavaScript){:target="_blank"}!
   
 </details>
 

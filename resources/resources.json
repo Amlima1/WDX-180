@@ -2806,6 +2806,94 @@
       "language": [
         "en"
       ]
+    },
+    "javascript-dom-manipulation-mastery-a-comprehensive-guide": {
+      "type": "YouTube",
+      "duration": 5133,
+      "title": "JavaScript DOM Manipulation Mastery: A Comprehensive Guide",
+      "date": "11/07/2023",
+      "youtube": {
+        "id": "BGkc6dKUZ84",
+        "channel_id": "UC8lxnUR_CzruT2KA6cb7p0Q",
+        "channel_title": "Envato Tuts+",
+        "thumbnail_url": "https://i.ytimg.com/vi/BGkc6dKUZ84/sddefault.jpg"
+      },
+      "tags": [
+        "javascript dom",
+        "javascript dom tutorial",
+        "javascript dom crash course",
+        "javascript",
+        "add classes in javascript",
+        "what is the website dom",
+        "javascript parent",
+        "website node",
+        "javascript tutorials",
+        "tutorial javascript",
+        "what is dom",
+        "dom",
+        "simple javascript",
+        "what is the dom",
+        "js",
+        "javascript crash course",
+        "javascript for beginners",
+        "dom explained",
+        "javascript node",
+        "js tutorial",
+        "javascript tutorial",
+        "javascript course",
+        "javascript course full",
+        "javascript course for intermediate"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "introduction-to-javascript-objects": {
+      "type": "YouTube",
+      "duration": 231,
+      "title": "Introduction to JavaScript Objects",
+      "date": "12/11/2020",
+      "youtube": {
+        "id": "OJBlJI1vEK8",
+        "channel_id": "UCpaabVZEeuXqlv8VPQvtTdQ",
+        "channel_title": "SkillsReactor",
+        "thumbnail_url": "https://i.ytimg.com/vi/OJBlJI1vEK8/sddefault.jpg"
+      },
+      "tags": [
+        "javascript objects",
+        "learn javascript",
+        "what are objects in javascript",
+        "what are javascript objects",
+        "create objects in javascript",
+        "how to create objects in javascript",
+        "javascript objects for beginners",
+        "javascript tutorial 2020",
+        "learn javascript programming for beginners",
+        "javascript objects explained",
+        "javascript objects and methods",
+        "Javascript objects tutorial"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "discovering-javascript-object-notation-with-douglas-crockford": {
+      "type": "YouTube",
+      "duration": 428,
+      "title": "Discovering JavaScript Object Notation with Douglas Crockford",
+      "date": "29/03/2012",
+      "youtube": {
+        "id": "kc8BAR7SHJI",
+        "channel_id": "UCSVKswAwikRd8ZS3AmSnuKg",
+        "channel_title": "ieeeComputerSociety",
+        "thumbnail_url": "https://i.ytimg.com/vi/kc8BAR7SHJI/sddefault.jpg"
+      },
+      "tags": [
+        "JSON",
+        "JavaScript",
+        "XML",
+        "Douglas Crockford"
+      ]
     }
   },
   "creators": {}
