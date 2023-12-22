@@ -1,5 +1,5 @@
 {
-  "$schema": "./resources.schema.json",
+  "$schema": "./schemas/resources.schema.json",
   "resources": {
     "how-computers-work-binary-data": {
       "title": "How Computers Work: Binary & Data",
@@ -2893,6 +2893,26 @@
         "JavaScript",
         "XML",
         "Douglas Crockford"
+      ]
+    },
+    "select-all-siblings-of-an-element-using-has": {
+      "type": "YouTube",
+      "duration": 60,
+      "title": "Select all siblings of an element using :has()",
+      "date": "22/11/2023",
+      "youtube": {
+        "id": "Ue3VUsZwAJ0",
+        "channel_id": "UCJZv4d5rbIKd4QHMPkcABCw",
+        "channel_title": "Kevin Powell",
+        "thumbnail_url": "https://i.ytimg.com/vi/Ue3VUsZwAJ0/sddefault.jpg"
+      },
+      "tags": [
+        "Kevin Powell",
+        "css",
+        "front-end",
+        "frontend",
+        "html",
+        "tutorial"
       ]
     }
   },
