@@ -1,0 +1,22 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    margin: 50px;
+}
+
+body {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 3.2rem;
+  }
+  p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    word-spacing: 0.6rem;
+  }
+   br {
+    margin-left: 10px;
+   }
