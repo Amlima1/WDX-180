@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Form">
+    <title>My Form</title>
+    <style>
+        :root {
+            --background-color: #282828;/*page background color*/
+            --input-text-color: #d0d0d0;
+            --placeholder-text-color: #cccccc;
+            --border-color: #4c4c4c;
+            --border-color-hover: #8f8f8f;
+            --border-color-focus: #7c9dbd;
+            --border-color-validation: #862e2a; /*When there is a validation error on some input*/
+        }
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        body {
+            max-width: 100%;
+            background-color: var(--background-color);
+        }
+        label {
+            color: var(--input-text-color);
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 75%;
+            color: var(--input-text-color);
+            border: 1px solid var(--border-color);
+            background-color: var(--background-color);
+            padding: 15px;
+        }
+        input::placeholder {
+            color: var(--placeholder-text-color);
+        }
+        input:hover {
+            border: 1px solid var(--border-color-hover);
+        }
+        input:focus {
+            border:1px solid var(--border-color-focus);
+        }
+        input:user-invalid {
+            border: 1px solid var(--border-color-validation)
+        }
+        input:invalid + span::after {
+            content: "Error: Invalid input";
+            background-color: var(--border-color-validation);
+            color: var(--input-text-color);
+            padding: 5px;
+            box-sizing: border-box;
+            position: relative;
+            top: 50px;
+            right: 1047px;/*990px the firefox browser and 1047px for google for ::after ::before 982px fox and 944px google*/
+        }
+        span {
+            color: var(--placeholder-text-color);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="msg">Enter your message:</label>
+        <input
+        type="text"
+        id="msg"
+        name="message"
+        placeholder="Placeholder text here"
+        pattern="[A-Za-z0-9!@_\- $()]{1-30}" required>
+        <span>0/30 characters</span>
+    </form>
+</body>
+</html>

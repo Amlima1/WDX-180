@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Form">
+    <title>My Form</title>
+    <style>
+        :root {
+            --background-color: #282828;/* page background color*/
+            --input-text-color: #d0d0d0;
+            --placeholder-text-color: #767676;
+            --border-color: #4c4c4c;
+            --border-color-hover: #8f8f8f;
+            --border-color-focus: #7c9dbd;
+            --border-color-validation: #862e2a; /*When there is a validation error on some input*/
+        }
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        body {
+            max-width: 100%;
+            background-color: var(--background-color);
+        }
+        label {
+            color: var(--input-text-color);
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 70%;
+            color: var(--input-text-color);
+            border: 1px solid var(--border-color);
+            background-color: var(--background-color);
+            padding: 5px;
+        }
+        input::placeholder {
+            color: var(--placeholder-text-color);
+        }
+        input:hover {
+            border: 1px solid var(--border-color-hover);
+        }
+        input:focus {
+            border:1px solid var(--border-color-focus);
+        }
+        input:user-invalid {
+            border: 1px solid var(--border-color-validation)
+        }
+        input:invalid + span::before {
+            content: "0/30 characters";
+            color: var(--placeholder-text-color);
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="msg">Enter your message:</label>
+        <input
+        type="text"
+        id="msg"
+        name="message"
+        placeholder="Placeholder text here"
+        pattern="[A-Za-z0-9!@_\- $()]{1-30}" required>
+        <span></span>
+    </form>
+</body>
+</html>
