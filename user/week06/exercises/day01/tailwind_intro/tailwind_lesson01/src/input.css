@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*.radial-blue {
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: radial-gradient(circle, lightyellow, skyblue);
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+} all the above is equal to: background: radial-gradient(lightyellow, skyblue);*/ 
+.radial-blue {
+    background: radial-gradient(lightyellow, skyblue);
+}
