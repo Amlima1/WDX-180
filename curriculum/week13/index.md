@@ -16,8 +16,7 @@ title: Week 13 | Intermediate JavaScript
 
   <h2 class="week-controls__previous_week">
 
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
-    {% if false and week_num > 0 %}
+    {% if week_num > 0 %}
 
       {% assign previous_week_num = 13 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -26,11 +25,10 @@ title: Week 13 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 9/1/2024</span>
+  <span>Updated: 29/8/2024</span>
 
   <h2 class="week-controls__next_week">
 
-    <!-- ADD CHECK FOR WEEK open:true (remove if false) -->
     {% if week_num <= 36 %}
 
       {% assign next_week_num = 13 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
@@ -292,3 +290,14 @@ title: Week 13 | Intermediate JavaScript
 ## Week 13 - Weekend Suggestions
 
 If you are in the mood of enjoying related content during the weekend, check out our weekly recommendations [here](WEEKEND.md).
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
