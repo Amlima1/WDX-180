@@ -25,6 +25,12 @@
 <details markdown="1">
   <summary><h3>Where do I start?</h3></summary>
 
+  You definitely need to **start by watching [this welcoming video](https://youtu.be/PxBdVw9tTa0){:target="_blank"}** about WDX180. Learn about what this we will cover, how to study, how to reach for help and some general tips and advice for the course.
+
+  ![](./curriculum/assets/Welcome.to.WDX180.jpg)
+  
+  What we are going to cover, how to study and some general tips
+
   If you are ready and feel committed enough to start the course, you must start by carefully going through the following sections and completing all the necessary tasks:
 
   - **Accounts**  
@@ -205,7 +211,7 @@
   - [Understanding CSV Files](https://www.youtube.com/watch?v=UofTplCVkYI){:target="_blank"}
     - Duration: 6 min
     - Level: Beginner
-    - You can find the `sample.csv` file mentioned in the video in the following filepath: [curriculum/week01/resources/sample.csv](./curriculum/week01/resources/sample.csv)
+    - You can find the `sample.csv` file mentioned in the video in the following filepath: [curriculum/modules/computer_science/misc/data_formats/assets/sample.csv](./curriculum/modules/computer_science/misc/data_formats/assets/sample.csv)
 
   In short, CSV is a lightweight data format, where:
   
@@ -226,6 +232,8 @@
 <!-- HOW TO STUDY -->
 <details markdown="1">
   <summary><h3>How to Study / Productivity tips</h3></summary>
+
+  ![](./curriculum/assets/take.notes.jpeg)
 
   - **AVOID DISTRACTIONS at all costs!** This means, closing all tabs, browser windows and applications that are not related to your daily study plan and practice. Be very vigilant against applications that include notifications (WhatsApp, Messenger, etc.). From time to time, you might even consider **pausing notifications from Slack** itself. Check the [**instructions found here**](https://slack.com/help/articles/214908388-Pause-notifications-with-Do-Not-Disturb){:target="_blank"} on how to do this. 
 
@@ -270,7 +278,7 @@ The curriculum draws heavily on the following amazing resources:
 - [**Mozilla Developer Network**](https://developer.mozilla.org/en-US/)
 - [**CodeYourFuture**](https://codeyourfuture.io/about/)
 - [**Codecademy**](https://www.codecademy.com/)
-- [**De Nepo: Open Ed**](https://github.com/denepo/)
+- [**DeNepo: Open Ed**](https://github.com/denepo/)
 - [**javascript.info** by Ilya Kantor](https://www.linkedin.com/in/iliakan/)
 - [**Kyle Simpson** aka getify, author of ___You Don't know JS___](https://www.linkedin.com/in/getify/)
 - [**LaunchCode Education**](https://github.com/LaunchCodeEducation)
