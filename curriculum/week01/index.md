@@ -25,7 +25,7 @@ title: Week 01 | Introduction to the Web and Web Technologies
 
   </h2>
 
-  <span>Updated: 31/8/2024</span>
+  <span>Updated: 11/10/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -1045,6 +1045,8 @@ Apart from creating HTML content and styling it with CSS, you also have some ins
 
 
 ### Extra Resources
+
+  - In case you are wondering whether to place your `<script>` tag inside the `<head>` or the `<body>` tag of the HTML document, this [**live Q&A**](https://youtu.be/NVKPOL8O_YU){:target="_blank"} recording will help answer this common question. Watch the recording to learn how placing the `<script>` tag in different places in your HTML document can affect performance and cause problems with JavaScript programs that need access to the page's HTML content.
 
   In case you want to give JavaScript another go, here is another great introductory playlist by the amazing [Mosh Hamedani](https://codewithmosh.com/){:target="_blank"}:
 
