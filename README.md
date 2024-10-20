@@ -67,24 +67,10 @@
 
   The first thing you want to do, is to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo){:target="_blank"}  this repository under your GitHub account.
 
-  After you've successfully forked the repo, you will need to enable [GitHub Pages](https://pages.github.com/){:target="_blank"} in order to turn the repo into a website also.
-
-  Here are the steps:
-
-  1. Go to **Settings**
-  2. Click on the **Pages** button
-  3. Under **Branch**, select **main** and click **Save**
-  4. Wait a few minutes, check that your repo is online and paste the URL on your personal progress sheet.
-
-  The URL should look something like this: `https://your_username.github.io/WDX-180`
+  **IMPORTANT:** In the video we mention that you should enable the `GitHub Pages` feature on your copy (forked) of the WDX-180 repository. We no longer recommend that you do that, so you can ignore the part of the video that goes through that process and **stop watching at 02:25**.
 
   > Here is a [YouTube video walkthrough](https://www.youtube.com/watch?v=xqGlWAHjtcM){:target="_blank"} to help you with this step. 
 
-  While you are at the **Settings** page, select **General** on the side menu and go to **Features > Check "Issues" > Save** in order to enable the **Issues** feature on your forked repo.
-
-  [![](./assets/GitHub.Enable.Issues.jpg)](./assets/GitHub.Enable.Issues.jpg){:target="_blank"}
-
-  _(Click the image to see a full-size version)_
 </details>
 
 <!-- COMMUNICATIONS -->
@@ -199,15 +185,15 @@
 
   In this course we will be working a lot with `Markdown` files and `CSV` files.
 
-  **Markdown** is a lightweight markup language used for formatting plain text documents, allowing users to easily add structure and style using simple, human-readable syntax.
-
-  **CSV (Comma-Separated Values)** is a simple file format used for storing and exchanging structured data, where each line represents a record or entry, and fields or columns within each record are separated by commas.
-
   If you are unfamiliar with either the `markdown` or `CSV` file formats, we highly recommend that you watch the following 2 YouTube videos to get a better understanding:
+
+  **Markdown** is a lightweight markup language used for formatting plain text documents, allowing users to easily add structure and style using simple, human-readable syntax.
 
   - [What is markdown?](https://www.youtube.com/watch?v=f49LJV1i-_w){:target="_blank"}
     - Duration: 8 min
     - Level: Beginner
+
+  **CSV (Comma-Separated Values)** is a simple file format used for storing and exchanging structured data, where each line represents a record or entry, and fields or columns within each record are separated by commas.
 
   - [Understanding CSV Files](https://www.youtube.com/watch?v=UofTplCVkYI){:target="_blank"}
     - Duration: 6 min
