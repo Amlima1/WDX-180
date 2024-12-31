@@ -49,3 +49,51 @@ title: BUG JOURNAL
 
 
 
+I encounter a small issue while with this function I created to render the challenges of the array of exercise 3 of week10 days 4
+ Down is the code
+ // RENDING THE CHALLENGES PART OF THE ARRAY 
+const divPython = document.createElement('div');
+
+
+function generateHTML(element, elementName, name, topics, status, name2){
+  element = document.createElement(`${element}`); // create the h3 element
+  element.classList.add(`js-${elementName}-element`); // add a class to the h3 element
+  wrapperDivElement.appendChild(element); // append the element to another or after another
+  element.innerHTML = `${name} 
+    <details class="details-${name2}">
+      <summary>${name2}</summary>
+      <ul class="ul-${name2}"></ul>
+    </details> ${status}`;
+    const detailsElement = document.querySelector(`.details-${name2}`);
+    const ulElement = document.querySelector(`.ul-${name2}`);
+    ulElement.innerHTML = '';
+    for(let topic of topics){
+      const liHTML = `<li class="li-${name2}">${topic}</li>`;
+      const liElements = document.querySelectorAll(`.li-${name2}`);
+      ulElement.innerHTML += liHTML;
+    }
+    
+  console.log(element);
+  console.log(element.innerHTML);
+}
+
+generateHTML('div', 
+  'python-div', mawuChallenges2025.challenges[0].name, 
+  mawuChallenges2025.challenges[0].topics, 
+  mawuChallenges2025.challenges[0].status, 'python');
+
+generateHTML('div', 
+    'javascript-div', mawuChallenges2025.challenges[1].name, 
+    mawuChallenges2025.challenges[1].topics, 
+    mawuChallenges2025.challenges[1].status, 'javascript');
+
+generateHTML('div', 
+    'html-css-div', mawuChallenges2025.challenges[2].name, 
+    mawuChallenges2025.challenges[2].topics, 
+    mawuChallenges2025.challenges[2].status, 'html & css');
+
+The fourth call of the function did not work, error message: cannot read property of null
+generateHTML('div', 
+    'react-div', mawuChallenges2025.challenges[3].name, 
+    mawuChallenges2025.challenges[3].topics, 
+    mawuChallenges2025.challenges[3].status, 'react');
