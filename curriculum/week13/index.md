@@ -25,7 +25,7 @@ title: Week 13 | Intermediate JavaScript
 
   </h2>
 
-  <span>Updated: 17/10/2024</span>
+  <span>Updated: 30/12/2024</span>
 
   <h2 class="week-controls__next_week">
 
@@ -42,17 +42,18 @@ title: Week 13 | Intermediate JavaScript
 
 ---
 
-<!-- Week 13 - Day 1 | Intermediate JavaScript -->
+<!-- Week 13 - Day 1 | JavaScript Promises -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 13 - Day 1</span> | Intermediate JavaScript</h2>
+      <span class="summary-day">Week 13 - Day 1</span> | JavaScript Promises</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: Intermediate JavaScript**
+  - **Lecture: JavaScript Promises**
   - **Practice**
+  - **Exercises**
   - **Work on Project (Group/Personal)**
 
 ### Study Plan
@@ -73,9 +74,29 @@ title: Week 13 | Intermediate JavaScript
 
   _(Image from [https://www.alexlintu.com/what-is-a-promise/](https://www.alexlintu.com/what-is-a-promise/){:target="_blank"})_
 
+  **Resources**
+
+  - Servers that return JSON data:
+    - [Chuck Norris Jokes](https://api.chucknorris.io/jokes/random){:target="_blank"}
+    - [Cat Facts](https://catfact.ninja/fact){:target="_blank"}
+
+  - Lectures Code:
+    - [Promises](./assets/intechgration-io-promises.zip){:target="_blank"}
+    - [Functions: The Chickend and the Eff](./assets/intechgration-io-functions-chicken-egg.zip){:target="_blank"}
+
+  - Lectures Diagrams:
+    - [Promises (in real life)](./assets/1_2lVkfUxpad7Y_2Y0K3ToLQ.png){:target="_blank"}
+    - [Promises (states)](./assets/Ekran-Resmi-2020-06-06-12.21.27.png){:target="_blank"}
+    - [Promises (states)](./assets/1_3S0Y1DQJe-NsUXHdNl8gHg.png){:target="_blank"}
+    - [Definition of 'Pending'](./assets/Google.Define.Pending.jpg){:target="_blank"}
+    - [Excalidraw](./assets/Promise.Diagram.png){:target="_blank"}
+    - [Server-Client Headers](./assets/Server.Client.Headers.png){:target="_blank"}
+
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  Finish all the exercises found on this [repository](https://github.com/in-tech-gration/promises-exercises){:target="_blank"}.
 
 <!-- Extra Resources -->
 
