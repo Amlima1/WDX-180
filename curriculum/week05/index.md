@@ -8,6 +8,8 @@ title: Week 05 | CSS Frameworks
   <span class="week-prefix">Week 05 |</span> CSS Frameworks
 </h1>
 
+<img src="assets/css-frameworks.jpg" />
+
 <div class="week-controls">
 
   {% assign week_num = 05 | to_integer %}
@@ -23,7 +25,7 @@ title: Week 05 | CSS Frameworks
 
   </h2>
 
-  <span>Updated: 8/11/2024</span>
+  <span>Updated: 2/11/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -37,6 +39,13 @@ title: Week 05 | CSS Frameworks
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -140,7 +149,7 @@ We are basically creating a single `<input>` form field of type `text`. In the s
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week05/progress/progress.draft.w05.d01.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 
 <!-- Extra Resources -->

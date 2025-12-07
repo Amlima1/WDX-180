@@ -24,6 +24,16 @@
 
 ## Syllabus
 
+<hr style="margin-bottom:0" />
+
+<div class="center opacity-50 opacity-100:hover">
+
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="curriculum-v1.0">this link</a>.
+
+</div>
+
+<hr />
+
 ### Beginner: WDX 60°
 
   - [**Week 01**: Basics of Computing, How the Internet & the World Wide Web works, intro to HTML, CSS and JavaScript](week01/index.md)
@@ -42,41 +52,33 @@
 ### Intermediate: WDX 120°
 
   - [**Week 13**: Intermediate JavaScript: Promises & Scope (var, let, const)](week13/index.md)
-  - [**Week 14**: Intermediate JavaScript](week14/index.md)
-  - [**Week 15**: Intermediate JavaScript](week15/index.md)
-  - [**Week 16**: Intermediate JavaScript](week16/index.md)
-  - [**Week 17**: Intermediate JavaScript](week17/index.md)
+  - [**Week 14**: Intermediate JavaScript: ECMAScript 6](week14/index.md)
+  - [**Week 15**: Intermediate JavaScript: Events](week15/index.md)
+  - [**Week 16**: Intermediate JavaScript: Events & Objects](week16/index.md)
+  - [**Week 17**: Intermediate JavaScript: Objects](week17/index.md)
   - [**Week 18**: Intermediate JavaScript](week18/index.md)
-  - [**Week 19**: Node JS](week19/index.md)
-  - [**Week 20**: Node JS](week20/index.md)
-  - [**Week 21**: React JS](week21/index.md)
-  - [**Week 22**: React JS](week22/index.md)
-  - [**Week 23**: React JS](week23/index.md)
-  - [**Week 24**: React JS](week24/index.md)
+  - [**Week 19**: Introduction to Node JS](week19/index.md)
+  - [**Week 20**: Web Servers with Node JS](week20/index.md)
+  - [**Week 21**: ⚛️ React JS - An Introduction](week21/index.md)
+  - [**Week 22**: ⚛️ React JS](week22/index.md)
+  - [**Week 23**: ⚛️ React JS](week23/index.md)
+  - [**Week 24**: ⚛️ React JS](week24/index.md)
 
 ### Advanced: WDX 180°
 
-  - [**Week 25**: Advanced JavaScript](week25/index.md)
-  - [**Week 26**: Advanced JavaScript](week26/index.md)
+  - [**Week 25**: Web APIs](week25/index.md)
+  - [**Week 26**: Canvas API](week26/index.md)
   - [**Week 27**: Advanced JavaScript](week27/index.md)
-  - [**Week 28**: Advanced JavaScript](week28/index.md)
-  - [**Week 29**: Advanced JavaScript](week29/index.md)
-  - [**Week 30**: Advanced JavaScript](week30/index.md)
+  - [**Week 28**: Building a Battleship Game in JS](week28/index.md)
+  - [**Week 29**: Data Structures & Algorithms](week29/index.md)
+  - [**Week 30**: TypeScript](week30/index.md)
   - [**Week 31**: Advanced JavaScript](week31/index.md)
-  - [**Week 32**: Advanced JavaScript](week32/index.md)
-  - [**Week 33**: Advanced JavaScript](week33/index.md)
-  - [**Week 34**: Advanced JavaScript](week34/index.md)
-  - [**Week 35**: Advanced JavaScript](week35/index.md)
-  - [**Week 36**: Advanced JavaScript](week36/index.md)
+  - [**Week 32**: Testing](week32/index.md)
+  - [**Week 33**: Intro to Databases](week33/index.md)
+  - [**Week 34**: Mini CMS Project](week34/index.md)
+  - [**Week 35**: Mini CMS Project](week35/index.md)
+  - [**Week 36**: Mini CMS Project](week36/index.md)
   - [**The Road Ahead**](#week37/index.md) _(🔒 Stay tuned! This module is on the way.)_
 
 ---
 
-<!-- COMMENTS: -->
-<script src="https://utteranc.es/client.js"
-  repo="in-tech-gration/WDX-180"
-  issue-term="pathname"
-  theme="github-dark"
-  crossorigin="anonymous"
-  async>
-</script>

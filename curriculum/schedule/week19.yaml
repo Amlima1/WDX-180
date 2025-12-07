@@ -1,24 +1,25 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: Node JS
+title: Introduction to Node.js
 # title: Data Structures & Algorithms
+header_image: week19/assets/Intro.to.Node.jpg
 schedule: 
   days:
-    1: # 
-      # file://./../modules/generics/node-js-generic.md
-      module: generics/node-js-generic.md
-    2: # 
-      # file://./../modules/generics/group-project-generic.md
-      module: generics/group-project-generic.md
-    3: # 
-      # file://./../modules/generics/node-js-generic.md
-      module: generics/node-js-generic.md
-    4: # 
-      # file://./../modules/generics/group-project-generic.md
-      module: generics/group-project-generic.md
+    1: # Introduction to Node.JS
+      # file://./../modules/javascript/misc/_w19d01/_w19d01.md
+      module: javascript/misc/_w19d01/_w19d01.md
+    2: # Node.JS Practice
+      # file://./../modules/javascript/misc/_w19d02/_w19d02.md
+      module: javascript/misc/_w19d02/_w19d02.md
+    3: # The Filesystem (fs) Module
+      # file://./../modules/javascript/misc/_w19d03/_w19d03.md
+      module: javascript/misc/_w19d03/_w19d03.md
+    4: # Learnyounode Practice
+      # file://./../modules/javascript/misc/_w19d04/_w19d04.md
+      module: javascript/misc/_w19d04/_w19d04.md
     5: # 
-      # file://./../modules/generics/node-js-generic.md
-      module: generics/node-js-generic.md
+      # file://./../modules/javascript/misc/_w19d05/_w19d05.md
+      module: javascript/misc/_w19d05/_w19d05.md
 
 # ---
 

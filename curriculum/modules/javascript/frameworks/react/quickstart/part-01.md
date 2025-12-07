@@ -292,9 +292,17 @@ export default function ShoppingList() {
 
 <!-- </Sandpack> -->
 
+### Exercises
+
+  Complete the following coding challenges:
+
+  - [BackChat](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/modules/javascript/frameworks/react/exercises/BackChat/README.md){:target="_blank"}
+  - [Holy Grail](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/modules/javascript/frameworks/react/exercises/HolyGrail/README.md){:target="_blank"}
+
 ### Extra Resources
 
 - [Who was Hedy Lamar?](https://www.youtube.com/watch?v=_rlXHNeQD-s){:target="_blank"}
+- Vimeo trailers you can embed without login: [https://vimeo.com/ondemand/browse](https://vimeo.com/ondemand/browse){:target="_blank"}
 
 ### Sources and Attributions
 

@@ -1,10 +1,53 @@
 ---
-title: Week 2
+title: Week 2 | HTML, Accessibility & Git
 ---
 
-# Week 2 | HTML, Accessibility & Git
+<hr class="mb-0">
 
-_(Updated: 18/09/2023)_
+<h1 id="{{ Week 16-Intermediate JavaScript | slugify }}">
+  <span class="week-prefix">Week 2 |</span> HTML, Accessibility & Git
+</h1>
+
+<img src="assets/html.forms.and.tables.jpg">
+
+<div class="week-controls">
+
+  {% assign week_num = 2 | to_integer %}
+
+  <h2 class="week-controls__previous_week">
+
+    {% if week_num > 0 %}
+
+      {% assign previous_week_num = 2 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
+
+      <a href="../week{{ previous_week_num }}">Week {{ previous_week_num }} &#8678;</a>
+    {% endif %}
+
+  </h2>
+
+  <span>Updated: 19/10/2025</span>
+
+  <h2 class="week-controls__next_week">
+
+    {% if week_num <= 36 %}
+
+      {% assign next_week_num = 2 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
+
+      <a href="../week{{ next_week_num }}">&#8680; Week {{ next_week_num }}</a>
+    {% endif %}
+
+  </h2>
+
+</div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
+
+---
 
 <!-- Week 2 - Day 1 | Git -->
 <details markdown="1">
@@ -151,7 +194,7 @@ _(Updated: 18/09/2023)_
 
 ### Exercises
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 ### [Extra Resources](EXTRAS.md)
 
@@ -225,7 +268,7 @@ _(Updated: 18/09/2023)_
 
 ### Exercises
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 ### [Extra Resources](EXTRAS.md)
 
@@ -290,7 +333,7 @@ _(Updated: 18/09/2023)_
     - **Description:** In our table assessment, we provide you with some data on the planets in our solar system, and get you to structure it into an HTML table.
     - **Submission:** You should place the files related to this exercise in the `user/week02/exercises/day03/Structuring_planet_data` folder.
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 ### [Extra Resources](EXTRAS.md)
 
@@ -337,29 +380,29 @@ _(Updated: 18/09/2023)_
 
   **Introductory guides:**
 
-  - [Read: **Your first form**](https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form) and complete all the challenges _(e.g. Active Learning sections, etc.)_.
+  - [Read: **Your first form**](https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form){:target="_blank"} and complete all the challenges _(e.g. Active Learning sections, etc.)_.
     - **Description:** The first article in our series provides you with your very first experience of creating a web form, including designing a simple form, implementing it using the right HTML form controls and other HTML elements, adding some very simple styling via CSS, and describing how data is sent to a server. 
     - **Level:** Beginner
 
-  - [Read: **How to structure a web form**](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form) and complete all the challenges _(e.g. Active Learning sections, etc.)_.
+  - [Read: **How to structure a web form**](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form){:target="_blank"} and complete all the challenges _(e.g. Active Learning sections, etc.)_.
     - **Description:** With the basics out of the way, we'll now look in more detail at the elements used to provide structure and meaning to the different parts of a form.
     - **Level:** Beginner
 
-  - [Complete the: **Test your skills: Form structure** challenge](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form)
+  - Complete the: [**Building a form structure** challenge](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/How_to_structure_a_web_form#building_a_form_structure){:target="_blank"} coding challenge on the MDN page. _(See attached screenshot below)_
+
+  [![](./assets/Building.a.form.structure.exercise.jpg)](./assets/Building.a.form.structure.exercise.jpg){:target="_blank"}
 
   **The different form controls:**
 
-  - [Read: **Basic native form controls**](https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls)
+  - Follow the [**Basic native form controls**](https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls){:target="_blank"} MDN article guide and code along.
     - **Description:** In this particular article, we will look at the original set of form controls, available in all browsers since the early days of the web.
     - **Level:** Beginner
-
-  - [Complete the: **Test your skills: Basic controls** challenge](https://developer.mozilla.org/en-US/docs/Learn/Forms/Test_your_skills:_Basic_controls)
 
 <!-- ### Summary -->
 
 ### Exercises
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 ### [Extra Resources](EXTRAS.md)
 
@@ -482,7 +525,7 @@ _(Updated: 18/09/2023)_
 
   Now it's time to gather all this knowledge around HTML _(and GitHub)_, build your own (accessible) Blog and take it online. Follow the instructions found [here](./exercises/lets_create_a_weblog/index.md). You might need to spend a few extra hours during the weekend to improve and finalize your Blog.
 
-  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheets are found in the `/user/weekXX/progress` folder, for example `user/week01/progress/progress.draft.w01.d01.csv`. You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 ### [Extra Resources](EXTRAS.md)
 

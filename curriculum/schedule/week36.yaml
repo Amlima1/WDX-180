@@ -1,24 +1,24 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-# title: TBA
-title: "Advanced JavaScript"
+title: "Mini CMS"
+header_image: week36/mini.cms.jpg
 schedule: 
   days:
-    1: # 
-      # file://./../modules/generics/study-practice-generic.md
-      module: generics/study-practice-generic.md
-    2: # More 
-      # file://./../modules/generics/live-session-generic.md
-      module: generics/live-session-generic.md
-    3: # 
-      # file://./../modules/generics/study-practice-generic.md
-      module: generics/study-practice-generic.md
-    4: # 
-      # file://./../modules/generics/live-session-generic.md
-      module: generics/live-session-generic.md
-    5: # 
-      # file://./../modules/generics/study-practice-generic.md
-      module: generics/study-practice-generic.md
+    1: # Mini CMS: Create Post / List Posts
+      # file://./../modules/javascript/misc/_w36d01/_w36d01.md
+      module: javascript/misc/_w36d01/_w36d01.md
+    2: # Practice Day
+      # file://./../modules/javascript/misc/_w36d02/_w36d02.md
+      module: javascript/misc/_w36d02/_w36d02.md
+    3: # Auth
+      # file://./../modules/javascript/misc/_w36d03/_w36d03.md
+      module: javascript/misc/_w36d03/_w36d03.md
+    4: # Practice Day
+      # file://./../modules/javascript/misc/_w36d04/_w36d04.md
+      module: javascript/misc/_w36d04/_w36d04.md
+    5: # Protected Routes
+      # file://./../modules/javascript/misc/_w36d05/_w36d05.md
+      module: javascript/misc/_w36d05/_w36d05.md
 
 ## 🏆 WDX°180 COMPLETION CERTIFICATE
 

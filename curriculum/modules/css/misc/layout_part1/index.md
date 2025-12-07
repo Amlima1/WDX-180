@@ -9,7 +9,7 @@ title: CSS Layout Part 1
 ### Study Plan
 
   <!-- SGEN:META:PROGRESS:task=Read 'Introduction to CSS layout' -->
-  - [Read: **Introduction to CSS layout**](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction){:target="_blank"}
+  - [Read: **Introduction to CSS layout**](../modules/mdn/learn/css/css_layout/introduction/index.html){:target="_blank"}
     - **Level:** Beginner
   
   <!-- SGEN:META:PROGRESS:task=Read 'Normal Flow' -->
@@ -21,6 +21,8 @@ title: CSS Layout Part 1
     - **Level:** Beginner
 
   **CSS Flexbox**
+
+  ![](./assets/flexbox.superhero.jpg)
   
   - Watch our [**CSS for Beginners: Making Sense of Flexbox**](https://www.youtube.com/watch?v=sgQVwd2IL9A){:target="_blank"} video to learn about one of the most powerful CSS technologies, allowing you to create 90% of the layouts that you see out there.
 

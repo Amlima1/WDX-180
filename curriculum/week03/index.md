@@ -8,6 +8,8 @@ title: Week 03 | CSS, Accessibility & Git
   <span class="week-prefix">Week 03 |</span> CSS, Accessibility & Git
 </h1>
 
+<img src="assets/css.inheritance.cascading.box.model.jpg">
+
 <div class="week-controls">
 
   {% assign week_num = 03 | to_integer %}
@@ -23,7 +25,7 @@ title: Week 03 | CSS, Accessibility & Git
 
   </h2>
 
-  <span>Updated: 10/11/2023</span>
+  <span>Updated: 21/10/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -37,6 +39,13 @@ title: Week 03 | CSS, Accessibility & Git
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -79,6 +88,7 @@ title: Week 03 | CSS, Accessibility & Git
     - Duration: 10min
     - Level: Beginner
     - Captions: Yes
+    - ⚠️ **Note:** The video is a bit old (but still highly relevant), so you will be seeing terms like `Master branch` or `(master)` a lot. The default branch these days is called the `main branch`.
 
   ---
 
@@ -96,6 +106,36 @@ title: Week 03 | CSS, Accessibility & Git
   - command2
   - action2
   ```
+
+  **Still confused?**
+
+  Just to give you a hint, think about how you would start
+  your working day if you were asked to create a new feature.
+
+  Of course, you would need to run `git status` to check your
+  current status and `git pull` to download any updates from
+  the remote repo.
+
+  So, you'll probably want to add those comments to the `new-feature-list.md`
+  file:
+
+  ```
+  - git status
+  - git pull
+  ```
+
+  Next, you want to create a new branch and `checkout` or `switch`
+  to that branch and start working safely. Once again, commands
+  like `git branch -a` to check what branches already exist, is
+  a good candidate for the list:
+
+  ```
+  - git status
+  - git pull
+  - git branch -a
+  ```
+
+  💡 That's the basic logic behind this exercise!
 
   > Note: It's a good practice to check the **status** of our repository after any alteration!!
 
@@ -201,7 +241,7 @@ title: Week 03 | CSS, Accessibility & Git
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week03/progress/progress.draft.w03.d02.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 
 <!-- Extra Resources -->
@@ -281,7 +321,7 @@ title: Week 03 | CSS, Accessibility & Git
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week03/progress/progress.draft.w03.d03.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 
 <!-- Extra Resources -->
@@ -355,7 +395,7 @@ title: Week 03 | CSS, Accessibility & Git
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week03/progress/progress.draft.w03.d04.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 
 <!-- Extra Resources -->
@@ -448,7 +488,7 @@ title: Week 03 | CSS, Accessibility & Git
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week03/progress/progress.draft.w03.d05.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 
 <!-- Extra Resources -->

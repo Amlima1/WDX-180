@@ -57,8 +57,15 @@
     - `GitHub` is a web-based platform for `version control` & collaboration on code projects.
   - [StackOverflow](https://stackoverflow.com/){:target="_blank"}
     - `StackOverflow` is a Q&A site for programmers.
+  - [Netlify](https://www.netlify.com/){:target="_blank"}
+    - `Netlify` lets you host your websites and applications for free.
   - [Codesandbox](https://codesandbox.io/){:target="_blank"}
     - An online code editor that gives you the ability to share your code with a single web address.
+
+  **Want more?**
+  
+  - [Codepen](https://codepen.io){:target="_blank"}
+    - Another popular code editor that gives you the ability to share your code with a single web address.
 </details>
 
 <!-- SETUP -->
@@ -115,6 +122,7 @@
       - [Windows](https://slack.com/downloads/windows){:target="_blank"} (109MB)
       - [Mac](https://slack.com/downloads/mac){:target="_blank"} (160MB)
       - [Linux (*_beta_)](https://slack.com/downloads/linux){:target="_blank"} (81MB)
+    - You should check out the dedicated page we have created for Slack over [here](./curriculum/modules/curriculum/communication/slack/){:target="_blank"}.
 
   - **Communication:** [Zoom client](https://zoom.us/support/download){:target="_blank"} and [Google Meet](https://meet.google.com/) are used to attend the live lectures and student sessions.
     - You can do a quick video/audio check for Google Meet, following the directions [found here](https://support.google.com/meet/answer/10409699?hl=en){:target="_blank"}. Video is optional, but **audio (good quality microphone) is mandatory**. 
@@ -240,6 +248,25 @@
     Hungry for more tips? We have a whole section full of productivity and learning tips [right here](resources/productivity.md){:target="_blank"}.
 </details>
 
+<!-- HOW TO RUN WDX LOCALLY -->
+<details markdown="1">
+  <summary><h3>How to run WDX locally</h3></summary>
+
+  ---
+
+  - Clone the GitHub repository locally:
+    - Via SSH (recommended): `git clone git@github.com:in-tech-gration/WDX-180.git` 
+    - Via HTTPS: `git clone https://github.com/in-tech-gration/WDX-180.git`
+  - Change into the WDX directory: `cd WDX-180`
+  - Run: `npm install`
+
+  Once you have followed the steps above (which was a one-time thing)
+  you can launch the app using the following command:
+
+  - `npm run serve:jekyll`
+
+</details>
+
 ### Finished setting everything up? 
 
 [**➡️ LET'S GET STARTED**](/curriculum/index.md)
@@ -289,9 +316,13 @@ The curriculum draws heavily on the following amazing resources:
 
 Our lovely contributors _(feel free to give them a follow/subscribe/like as a gesture of appreciation)_:
 
-- **Shariar Shakhawat**: [GitHub](https://github.com/Sha-Shak) / [Twitter](https://twitter.com/shahriartweets)
+- **Nicolas Wickens**: [GitHub](https://github.com/NicolasWickens)
+- **Walaa Medhat**: [GitHub](https://github.com/walaamedhat)
 - **Maria Karavazaki**: [GitHub](https://github.com/MariaKar1991)
+- **Mubashra Irshad**: [GitHub](https://github.com/mubashra21c)
 - [**PlethoraThemes**](https://plethorathemes.com/)
+- **Shariar Shakhawat**: [GitHub](https://github.com/Sha-Shak) / [Twitter](https://twitter.com/shahriartweets)
+- **Dimitris**: [GitHub](https://github.com/dimitriost1)
 
 ---
 

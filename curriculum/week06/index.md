@@ -11,6 +11,8 @@ load_script_js_via_src:
   <span class="week-prefix">Week 06 |</span> CSS Frameworks & Intro to Programming
 </h1>
 
+<img src="assets/pexels-sevenstormphotography-439416.jpg" />
+
 <div class="week-controls">
 
   {% assign week_num = 06 | to_integer %}
@@ -26,11 +28,11 @@ load_script_js_via_src:
 
   </h2>
 
-  <span>Updated: 8/11/2024</span>
+  <span>Updated: 10/11/2025</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 06 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -40,6 +42,13 @@ load_script_js_via_src:
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -135,7 +144,9 @@ load_script_js_via_src:
 
 <!-- Exercises -->
 
-<!-- Extra Resources -->
+### Extra Resources
+
+  - [Tailwind CSS Tutorial for Beginners (2023)](https://www.youtube.com/watch?v=G5YDmWNU_tc){:target="_blank"} (YouTube, 45min)
 
 ### Sources and Attributions
 
@@ -144,16 +155,20 @@ load_script_js_via_src:
   - [The Pros and Cons of CSS Frameworks: A Comprehensive Review](https://dev.to/c0mmand3rj/the-pros-and-cons-of-css-frameworks-a-comprehensive-review-13db)
   
   - [Guide to CSS Framework](https://www.simplilearn.com/tutorials/css-tutorial/css-framework)
+
+  - Thanks to [Mubashra Irshad](https://github.com/mubashra21c){:target="_blank"} for reviewing and suggesting the `Tailwind CSS Tutorial for Beginners`.
+
+  _Photo by [SevenStorm JUHASZIMRUS](https://www.pexels.com/photo/green-and-yellow-crane-439416/)_
   
 </details>
 
 <hr class="mt-1">
 
-<!-- Week 06 - Day 2 | How To Make A Website With Tailwind CSS -->
+<!-- Week 06 - Day 2 | How to Make A Website With Tailwind CSS -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 06 - Day 2</span> | How To Make A Website With Tailwind CSS</h2>
+      <span class="summary-day">Week 06 - Day 2</span> | How to Make A Website With Tailwind CSS</h2>
   </summary>
 
 ### Schedule
@@ -186,7 +201,7 @@ load_script_js_via_src:
 
 ### Exercises
 
-  - Complete the **Make a Website with Tailwind CSS** challenge and update the progress sheet.
+  - Complete the **How to Make a Website with Tailwind CSS** challenge and update the progress sheet.
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week06/progress/progress.draft.w06.d02.csv**
 
@@ -195,7 +210,12 @@ load_script_js_via_src:
 
 ### Extra Resources
 
-  - [Read: **The Pros And Cons Of Utility First CSS**](https://thesassway.com/the-pros-and-cons-of-utility-first-css/){:target="_blank"}
+  <!-- Web server is down -->
+
+
+  <!-- - [Read: **The Pros And Cons Of Utility First CSS**](https://thesassway.com/the-pros-and-cons-of-utility-first-css/){:target="_blank"} -->
+
+
 
   - [Read: **10 Reasons To Use TailwindCSS In Your Next Project**](https://hackernoon.com/10-reasons-to-use-tailwindcss-in-your-next-project){:target="_blank"}
 
@@ -569,7 +589,7 @@ load_script_js_via_src:
   so interesting.
 
   - [simplilearn](https://www.youtube.com/watch?v=6ENWOVc-64c){:target="_blank"}
-  - [wierd history of js](https://dev.to/codediodeio/the-weird-history-of-javascript-2bnb){:target="_blank"}
+  - [weird history of js](https://dev.to/codediodeio/the-weird-history-of-javascript-2bnb){:target="_blank"}
   - [from Brendan Eich himself](https://www.youtube.com/watch?v=3-9fnjzmXWA){:target="_blank"}
   - [springboard](https://www.springboard.com/blog/data-science/history-of-javascript/){:target="_blank"}
 
@@ -829,9 +849,9 @@ load_script_js_via_src:
 
   **Explore Study Lenses**
 
-  Continue your exploration of the `study-lenses` tool. Follow the instructions from [**Setting up Study Lenses (v2)**](../modules/javascript/denepo/setting-up-study-lenses/index.md){:target="_blank"} to set up Study Lenses (v2) on your System (if you haven't done that already).
+  Continue your exploration of the `study-lenses` tool. Follow the [instructions here](https://in-tech-gration.github.io/WDX-180/curriculum/modules/javascript/denepo/setting-up-study-lenses/) to set up Study Lenses (v2) on your System (if you haven't done that already).
 
-  Then run the following commands on your local copy of the `WDX-180` repo:
+  Then the following commands on your local copy of the `WDX-180` repo:
 
   - `lenses2 curriculum/week06/exercises/exploring-study-lenses`
 
@@ -965,6 +985,8 @@ load_script_js_via_src:
 <hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
+
+
 
 ---
 

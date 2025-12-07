@@ -1,20 +1,21 @@
 input: curriculum/schedule/weekly.draft.md
 daily_input: curriculum/schedule/daily.draft.md
-title: "Advanced JavaScript"
+title: "Mini CMS"
+# header_image: week35/header.jpg
 schedule: 
   days:
-    1: # 
-      # file://./../modules/generics/study-practice-generic.md
-      module: generics/study-practice-generic.md
-    2: # More 
-      # file://./../modules/generics/live-session-generic.md
-      module: generics/live-session-generic.md
-    3: # 
-      # file://./../modules/generics/study-practice-generic.md
-      module: generics/study-practice-generic.md
-    4: # 
-      # file://./../modules/generics/live-session-generic.md
-      module: generics/live-session-generic.md
+    1: # MiniCMS
+      # file://./../modules/javascript/misc/_w35d01/_w35d01.md
+      module: javascript/misc/_w35d01/_w35d01.md
+    2: # MiniCMS
+      # file://./../modules/javascript/misc/_w35d02/_w35d02.md
+      module: javascript/misc/_w35d02/_w35d02.md
+    3: # Promises
+      # file://./../modules/javascript/misc/_w35d03/_w35d03.md
+      module: javascript/misc/_w35d03/_w35d03.md
+    4: # Practice Day
+      # file://./../modules/javascript/misc/_w35d04/_w35d04.md
+      module: javascript/misc/_w35d04/_w35d04.md
     5: # 
-      # file://./../modules/generics/study-practice-generic.md
-      module: generics/study-practice-generic.md
+      # file://./../modules/javascript/misc/_w35d05/_w35d05.md
+      module: javascript/misc/_w35d05/_w35d05.md

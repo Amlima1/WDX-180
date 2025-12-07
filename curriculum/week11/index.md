@@ -1,12 +1,14 @@
 ---
-title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch API
+title: Week 11 | Web APIs 2 - Asynchronous Programming - Promises - JSON - Fetch API
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 11-Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API | slugify }}">
-  <span class="week-prefix">Week 11 |</span> Web APIs 2: Asynchronous Programming - Promises - JSON - Fetch API
+<h1 id="{{ Week 11-Web APIs 2 - Asynchronous Programming - Promises - JSON - Fetch API | slugify }}">
+  <span class="week-prefix">Week 11 |</span> Web APIs 2 - Asynchronous Programming - Promises - JSON - Fetch API
 </h1>
+
+<img src="assets/pexels-roman-odintsov-12725452.jpg" />
 
 <div class="week-controls">
 
@@ -23,11 +25,11 @@ title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch
 
   </h2>
 
-  <span>Updated: 30/12/2024</span>
+  <span>Updated: 11/11/2025</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 11 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -64,13 +66,15 @@ title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch
 
 
 
-  ![](./assets/the_history_of_json_at_silicon_valley_code_camp.jpg)
+  ![](./assets/douglas.crockford.discoverer.of.JSON.png)
 
   - Read [**Introduction to JSON**](../modules/javascript/core/json/intro/content/index.md){:target="_blank"} to learn about the world's most popular data format. JSON, which stands for `JavaScript Object Notation`, is a plain text, lightweight data format that can be used across different systems and programming languages.
 
 ### Summary
 
-  🌕 You are extraordinary. You know a light-weight data format which you may use to store data or to send it an HTTP server. Now do some exercises for your brain and for your muscle.
+  🌕 You are extraordinary. You now know about this light-weight data format which you can use to store data or send it to an HTTP server. Now, let's do some exercises for your brain and your muscle.
+
+  ![](./assets/the_history_of_json_at_silicon_valley_code_camp.jpg)
 
 ### Exercises
 
@@ -80,7 +84,7 @@ title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week11/progress/progress.draft.w11.d01.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 
 ### Extra Resources
@@ -94,6 +98,12 @@ title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch
   - [30 Days Of JavaScript: JSON](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/master/16_Day_JSON/16_day_json.md){:target="_blank"} [(Permalink)](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/55d8e3dbc0410d64c1dc3ea5915e015a7950cf2a/16_Day_JSON/16_day_json.md){:target="_blank"}
 
   Don't forget to star this awesome [repo](https://github.com/Asabeneh/30-Days-Of-JavaScript){:target="_blank"}!
+
+  ---
+
+
+
+_Photo by [ROMAN ODINTSOV](https://www.pexels.com/photo/a-a-customer-receiving-a-food-delivery-12725452/){:target="_blank"} on [Pexels](https://www.pexels.com/photo/a-a-customer-receiving-a-food-delivery-12725452/){:target="_blank"}_
   
 </details>
 
@@ -141,6 +151,11 @@ title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch
 ### Exercises
 
   Try to complete as many exercises as you can from the [30 Days Of JavaScript: Promises](https://github.com/in-tech-gration/30-Days-Of-JavaScript/blob/master/18_Day_Promises/18_day_promises.md#exercises){:target="_blank"} repository, and don't forget to star the [original repo](https://github.com/Asabeneh/30-Days-Of-JavaScript){:target="_blank"} if you enjoyed them and found them helpful.
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week11/progress/progress.draft.w11.d02.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
+
 
 ### Extra Resources
 
@@ -197,7 +212,7 @@ title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch
 
   **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week11/progress/progress.draft.w11.d03.csv**
 
-  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../modules/curriculum/progress_workflow.md).
 
 
 ### Extra Resources
@@ -397,6 +412,8 @@ title: Week 11 | Web APIs 2 | Asynchronous Programming - Promises - JSON - Fetch
 <hr class="mt-1">
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
+
+
 
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Advanced CSS
+updated: 09/06/2025
 ---
 
 ### Schedule
@@ -17,6 +18,19 @@ title: Advanced CSS
   Let's begin by reading about [What is a Software Post-Mortem and How Do You Write One?](https://www.freecodecamp.org/news/what-is-a-software-post-mortem/){:target="_blank"}
 
   After having read the article, open up the code [found here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/javascript/misc/post_mortem){:target="_blank"} debug the program and write a short post mortem.
+
+  When you're done, take a short break and move on to the next section, where
+  we switch gears and learn about the all powerful **CSS Grid**.  
+
+  ---
+
+  **Introduction to CSS Grid**
+
+  ![](./assets/CSS.Grid.png)
+
+  - Watch the lecture [here](https://youtu.be/9164u4MbdHo){:target="_blank"}.
+  - Study the code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/css/misc/advanced_css/assets/lecture-code){:target="_blank"}
+  - Practice on CSS Grid by recreating the layouts depicted in the images found [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/modules/css/misc/advanced_css/assets/css-grid-practice){:target="_blank"}
 
   ---
 
@@ -51,6 +65,28 @@ title: Advanced CSS
   On top of that, you want to create a page that includes every single feature with a small description taken from the MDN docs and a small example (containing both the code used and the actual displayed output).
 
 ### Exercises
+
+  - Build a replica of the [**var/let/const table**](./assets/var-let-const.jpg){:target="_blank"} using HTML and CSS. Sprinkle the table with some JavaScript if you feel like it. 
+
+  ![](./assets/var-let-const.jpg)
+
+  You can use some emojis for the ❌ and ✅ or you can recreate them using plain CSS!
+
+  - [Check Mark](https://emojipedia.org/check-mark-button){:target="_blank"}
+  - [Cross Mark](https://emojipedia.org/cross-mark){:target="_blank"}
+
+  If you go with the CSS route for the symbols, you can use the following HTML entities
+  and find some CSS rules to apply colors, background, borders, circles, etc. to these characters
+  - `<span>&check;</span>`
+  - `<span>&CircleTimes;</span>`
+
+  Refs:
+  - [Unicode Character “⊗” (U+2297)](https://www.compart.com/en/unicode/U+2297){:target="_blank"}
+  - [Unicode Character “✓” (U+2713)](https://www.compart.com/en/unicode/U+2713){:target="_blank"}
+
+  You can of course, build the structure in many ways, but the `<table>` element is the most appropriate here.
+  In case you've started building using another element, feel free to do so, and we'll check how different layouts
+  and structure look later on.
 
 ### Extra Resources
 

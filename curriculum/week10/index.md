@@ -1,12 +1,14 @@
 ---
-title: Week 10 | Web APIs 1 | DOM
+title: Week 10 | Web APIs 1: DOM
 ---
 
 <hr class="mb-0">
 
-<h1 id="{{ Week 10-Web APIs 1 | DOM | slugify }}">
+<h1 id="{{ Week 10-Web APIs 1: DOM | slugify }}">
   <span class="week-prefix">Week 10 |</span> Web APIs 1: DOM
 </h1>
+
+<img src="assets/iewek-gnos-hhUx08PuYpc-unsplash.jpg" />
 
 <div class="week-controls">
 
@@ -23,11 +25,11 @@ title: Week 10 | Web APIs 1 | DOM
 
   </h2>
 
-  <span>Updated: 27/12/2023</span>
+  <span>Updated: 6/12/2025</span>
 
   <h2 class="week-controls__next_week">
 
-    {% if week_num <= 36 %}
+    {% if week_num < 36 %}
 
       {% assign next_week_num = 10 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
 
@@ -37,6 +39,13 @@ title: Week 10 | Web APIs 1 | DOM
   </h2>
 
 </div>
+
+<!-- VERSION -->
+<hr style="margin-bottom:0" />
+<div class="center opacity-50 opacity-100:hover">
+  You are viewing v2.0 of this content. To go back to v1.0 click <a href="v1.0">this link</a>.
+</div>
+<!-- VERSION -->
 
 ---
 
@@ -67,6 +76,11 @@ title: Week 10 | Web APIs 1 | DOM
   Under the `user/` folder, you'll find a new `bug_journal/` folder that contains a sample file called `BUG_JOURNAL.draft.md`.  Copy this file, rename it to `BUG_JOURNAL.md` and **start tracking your bugs** from now on. You'll find a small example inside the draft (you can remove it from your copy) to give you an idea on what to look for and how to document each bug. There's a long and short version of bug reporting. Use the one that fits your style and mode of operation.
 
   > "The worst thing you can do is to ignore your mistakes. Don't get into the bad habit of error amnesia. You should be learning from your mistakes and the only way to learn from your mistakes is to pay attention to them." ~ Douglas Crockford
+
+
+
+  > Those who cannot remember the past are condemned to repeat it.
+  > Jorge Santayana
 
 
 
@@ -121,7 +135,13 @@ title: Week 10 | Web APIs 1 | DOM
 
 <!-- Extra Resources -->
 
-<!-- Sources and Attributions -->
+### Sources and Attributions
+
+---
+
+
+
+_Photo by [Iewek Gnos](https://unsplash.com/@imkirk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"} on [Unsplash](https://unsplash.com/photos/macbook-pro-on-white-wooden-desk-hhUx08PuYpc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"}_
   
 </details>
 
@@ -361,16 +381,25 @@ title: Week 10 | Web APIs 1 | DOM
 
   _*Starting from `LESSON 8: DOM EVENT BASICS` around 01:04:46 up to the end of the video_
 
+  After watching the video and practice all the concepts in your local 
+  environment, take notes and a long break to let all this knowledge 
+  consolidate.
+
+  Then, prepare a hot cup of tea or coffee and prepare to dive once more
+  into the DOM API by watching the following video, while taking notes
+  and stopping at times to practice what you see in your local environment
+  and code files:
+
+  <!-- TODO: Review + Add Practice -->
+
+
+  - Watch [**DOM API - JavaScript Tutorial for beginners**](https://youtu.be/wbQLEXg_urE){:target="_blank"} and try to replicate as much as you can in your local environment.
+    - **Duration:** 42min
+    - **Level:** Beginner
+
   ---
 
 
-
-  - Now Let's use the `study-lenses` tool to study "Just enough DOM":
-
-    - Sync your forked WDX-180 repo with the original repo
-    - Download the changes locally by running: `git pull`
-    - Run `npm run update:submodules`
-    - `lenses2 curriculum/modules/javascript/denepo/inside-javascript/02-just-enough-dom`
 
 <!-- Summary -->
 
